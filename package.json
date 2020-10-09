@@ -2,12 +2,46 @@
   "name": "react-knight-design",
   "version": "0.0.1",
   "description": "React Knight Design is a Component Library",
-  "main": "index.js",
+  "main": "build/index.js",
   "license": "MIT",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "storybook:export": "build-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@storybook/react": "^6.0.26",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@types/jest": "^26.0.14",
     "@types/react": "^16.9.51",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.5.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rollup": "^2.29.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-typescript2": "^0.27.3",
+    "sass-loader": "^10.0.3",
+    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }
 }
