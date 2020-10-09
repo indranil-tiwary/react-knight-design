@@ -1,0 +1,13 @@
+{
+  "name": "react-knight-design",
+  "version": "0.0.1",
+  "description": "React Knight Design is a Component Library",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.51",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^4.0.3"
+  }
+}
