@@ -4,7 +4,6 @@
   "description": "React Knight Design is a Component Library",
   "main": "build/index.js",
   "license": "MIT",
-  "module": "build/index.es.js",
   "files": [
     "build"
   ],
@@ -14,6 +13,7 @@
     "storybook:export": "build-storybook",
     "test": "jest",
     "test:watch": "jest --watch",
+    "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
@@ -37,8 +37,9 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rollup": "^2.29.0",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
-    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-typescript2": "^0.27.3",
     "sass-loader": "^10.0.3",
     "ts-jest": "^26.4.1",
